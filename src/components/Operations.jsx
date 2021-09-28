@@ -160,12 +160,12 @@ const Operations = () => {
         </div>
         <div className="btn-bottom">
           <button
-            className="button bottom equal"
+            className="button bottom operations"
             onClick={() => setCalc(result)}
           >
             =
           </button>
-          <button className="button bottom reset" onClick={handleReset}>
+          <button className="button bottom operations" onClick={handleReset}>
             Reset
           </button>
         </div>

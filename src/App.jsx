@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Operations from "./components/Operations";
-import Results from "./components/Results";
 import "./App.css";
 
 function App() {
