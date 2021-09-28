@@ -1,0 +1,81 @@
+.button {
+  width: 40px;
+  height: 60px;
+  background-color: rgb(225, 225, 225);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-bottom: #490152 5px solid;
+}
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  padding-right: 20px;
+}
+.btn-container {
+  display: flex;
+}
+.buttons_numbers-container {
+  text-align: center;
+}
+
+.result-container input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  color: whitesmoke;
+  text-align: end;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+.result-container textarea {
+  background-color: #35003c;
+  color: white;
+  text-align: end;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: none;
+  resize: none;
+}
+.result-container .result {
+  text-align: start;
+  max-width: 100px;
+}
+.btn_operators {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.btn_numbers {
+  display: flex;
+}
+.numbers {
+  width: 25%;
+  margin: 5px 5px;
+}
+.clear {
+  background-color: rgb(223, 8, 8);
+  width: 25%;
+  margin-left: 10px;
+}
+.btn-bottom {
+  width: 100%;
+}
+.bottom {
+  width: 45%;
+  margin-left: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.equal {
+  background-color: green;
+}
+.reset {
+  background-color: crimson;
+}
