@@ -28,6 +28,7 @@ const Operations = () => {
   return (
     <>
       <div className="result-container">
+        <textarea rows="2" type="text" value={calc} placeholder="0" readOnly />
         <input
           type="text"
           className="result"
@@ -35,7 +36,6 @@ const Operations = () => {
           placeholder="0"
           readOnly
         />
-        <textarea rows="2" type="text" value={calc} placeholder="0" readOnly />
       </div>
       <div className="operations-container">
         <div className="btn-container">
