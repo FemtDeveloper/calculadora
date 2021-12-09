@@ -24,7 +24,6 @@ const Operations = () => {
     setCalc("");
     setResult("");
   };
-  console.log(typeof calc);
   return (
     <>
       <div className="result-container">

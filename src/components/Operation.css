@@ -21,11 +21,11 @@
 .result-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 80%;
+  align-items: flex-start;
+  width: 90%;
   min-height: 45px;
   padding: 5px 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #35003c;
 }
@@ -52,7 +52,6 @@
 }
 .result-container .result {
   text-align: start;
-  max-width: 100px;
 }
 .btn_operators {
   display: flex;
@@ -87,4 +86,12 @@
 }
 .btn-bottom .operations {
   min-width: 90px;
+}
+@media screen and (min-width: 680px) {
+  .numbers {
+    width: 29%;
+  }
+  .btn-bottom .operations {
+    min-width: 220px;
+  }
 }
