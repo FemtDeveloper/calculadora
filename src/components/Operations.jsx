@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Operation.css";
 
-const Operations = () => {
+const Operations = ({ isDarkMode }) => {
   const [result, setResult] = useState("");
   const [calc, setCalc] = useState("");
 
@@ -26,17 +26,23 @@ const Operations = () => {
   };
   return (
     <>
-      <div className="result-container">
+      <div
+        className={!isDarkMode ? "light result-container" : "result-container"}
+      >
         <textarea rows="2" type="text" value={calc} placeholder="0" readOnly />
         <input
           type="text"
-          className="result"
+          className={!isDarkMode ? "result" : "light result"}
           value={`(${result})`}
           placeholder="0"
           readOnly
         />
       </div>
-      <div className="operations-container">
+      <div
+        className={
+          !isDarkMode ? "operations-container light" : "operations-container"
+        }
+      >
         <div className="btn-container">
           <div className="buttons_numbers-container">
             <button

@@ -14,6 +14,14 @@
   width: 100%;
   height: 80%;
 }
+main .light {
+  background-color: #e1e1e1;
+}
+.light button,
+.light input {
+  background-color: #686868;
+  color: #1a1a1a;
+}
 .btn-container {
   display: flex;
   width: 100%;
@@ -31,7 +39,6 @@
 }
 
 .result-container input {
-  color: #9b9800;
   border: none;
   width: 100%;
   background-color: transparent;
@@ -42,7 +49,7 @@
   word-wrap: break-word;
 }
 .result-container textarea {
-  background-color: #35003c;
+  background-color: transparent;
   width: 100%;
   text-align: end;
   font-size: 22px;
@@ -51,6 +58,7 @@
   border: none;
   resize: none;
 }
+
 .result-container .result {
   text-align: start;
 }

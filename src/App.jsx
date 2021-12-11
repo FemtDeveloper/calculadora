@@ -15,7 +15,7 @@ function App() {
       </div>
 
       <main className={isDarkMode ? "Dark-calc" : "Light"}>
-        <Operations />
+        <Operations isDarkMode={isDarkMode} />
       </main>
     </div>
   );
