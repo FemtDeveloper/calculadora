@@ -10,16 +10,10 @@ function App() {
 
   return (
     <div className={isDarkMode ? "App Dark" : "App Light"}>
-      {isDarkMode ? (
-        <div className="toggle" onClick={() => setIsDarkMode(!isDarkMode)}>
-          <h4>Set light mode</h4> <img src={On} alt="" />
-        </div>
-      ) : (
-        <div className="toggle" onClick={() => setIsDarkMode(!isDarkMode)}>
-          <h4>Set dark mode</h4>
-          <img src={Off} alt="" />
-        </div>
-      )}
+      <div className="toggle" onClick={() => setIsDarkMode(!isDarkMode)}>
+        {isDarkMode ? <img src={Off} alt="" /> : <img src={On} alt="" />}
+      </div>
+
       <main className={isDarkMode ? "Dark-calc" : "Light"}>
         <Operations />
       </main>
